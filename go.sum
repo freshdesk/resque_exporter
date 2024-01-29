@@ -5,8 +5,8 @@ github.com/beorn7/perks v0.0.0-20160804104726-4c0e84591b9a/go.mod h1:Dwedo/Wpr24
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/freshdesk/resque_exporter v0.0.0-20170627173848-e2a48dff3b0c h1:Ti4+T4j4FQYPGjp7xmywIc4ykJ805qLvIHmHFDGAdqs=
-github.com/freshdesk/resque_exporter v0.0.0-20170627173848-e2a48dff3b0c/go.mod h1:w73zyjwtQ4pdNpJcmg5lSosmZ6rJj3kIC8zgpKBr3P8=
+github.com/freshdesk/resque_exporter v0.0.0-20240129092457-5360ce82dfe5 h1:GRcPdLzBTxpWAHXSt2SZAf4ppMfHi1Z3jW6+ePEh8tA=
+github.com/freshdesk/resque_exporter v0.0.0-20240129092457-5360ce82dfe5/go.mod h1:ViUHlL22n5qMCKz8zUcLxVTN7oyk6ITkCKUaU/TGEKU=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/fsnotify/fsnotify v1.4.9 h1:hsms1Qyu0jgnwNXIxa+/V/PDsU6CfLf6CNO8H7IWoS4=
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=

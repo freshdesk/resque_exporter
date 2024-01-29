@@ -3,11 +3,10 @@ module resque
 go 1.19
 
 require (
-	github.com/freshdesk/resque_exporter v0.0.0-20170627173848-e2a48dff3b0c
+	github.com/freshdesk/resque_exporter v0.0.0-20240129092457-5360ce82dfe5
 	github.com/mkideal/cli v0.0.2-0.20170324155650-a9c110456692
 	github.com/prometheus/client_golang v0.8.1-0.20170606102253-de4d4ffe63b9
 	gopkg.in/redis.v3 v3.6.4
-	gopkg.in/yaml.v2 v2.3.0
 )
 
 require (
@@ -32,4 +31,5 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/bsm/ratelimit.v1 v1.0.0-20160220154919-db14e161995a // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
+	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
