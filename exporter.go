@@ -112,7 +112,7 @@ func (e *exporter) Collect(ch chan<- prometheus.Metric) {
 
 func (e *exporter) collect(ch chan<- prometheus.Metric) error {
 	resqueNamespace := e.config.ResqueNamespace
-
+	fmt.Printf("Collect method invoked at: %s\n", e.config.ResqueNamespace)
 	redisConfig := e.config.Redis
 	redisOpt := &redis.Options{
 		Addr:     fmt.Sprintf("%s:%d", redisConfig.Host, redisConfig.Port),
