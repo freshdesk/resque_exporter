@@ -52,7 +52,7 @@ func Run(args []string) {
 		log.Fatal("Missing mandatory option parameter: --config")
 	}
 
-	config, err := loadConfig(configPath)
+	config, err := loadConfigFromEnv()
 	if err != nil {
 		log.Fatal(err)
 	}
