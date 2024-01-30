@@ -113,14 +113,14 @@ func (e *exporter) Collect(ch chan<- prometheus.Metric) {
 
 func (e *exporter) collect(ch chan<- prometheus.Metric) error {
 	resqueNamespace := e.config.ResqueNamespace
-	log.Print("%s namespace", resqueNamespace)
+	log.Printf("%s", resqueNamespace)
 	redisConfig := e.config.Redis
 	redisOpt := &redis.Options{
 		Addr:     fmt.Sprintf("%s:%d", redisConfig.Host, redisConfig.Port),
 		Password: redisConfig.Password,
 		DB:       redisConfig.DB,
 	}
-	log.Print("%s:%d host port", redisConfig.Host, redisConfig.Port)
+	log.Printf("%s:%d", redisConfig.Host, redisConfig.Port)
 	redis := redis.NewClient(redisOpt)
 	defer redis.Close()
 
@@ -134,7 +134,6 @@ func (e *exporter) collect(ch chan<- prometheus.Metric) error {
 	if err != nil {
 		return err
 	}
-	log.Print("%s Queues", queues)
 	for _, q := range queues {
 		n, err := redis.ZCard(fmt.Sprintf("%s:queue:%s", resqueNamespace, q)).Result()
 		if err != nil {
